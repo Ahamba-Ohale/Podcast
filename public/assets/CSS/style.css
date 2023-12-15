@@ -1,0 +1,2952 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+    display: block;
+    background-repeat: no-repeat;
+}
+
+.active-link{
+    text-decoration: underline;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    background-image: url("/assets/img/image.png");
+    background-size: cover;
+}
+
+.nav {
+    padding: .5rem;
+}
+
+.nav__menu {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: .5rem;
+}
+
+.nav__logo{
+    width: 3rem;
+}
+
+.nav__list{
+    display: inline-flex;
+    column-gap: .4rem;
+}
+
+.nav__link{
+    font-family: 'Lato', sans-serif;
+    font-size: 6px;
+    font-weight: 600;
+}
+
+.nav__buttons{
+    display: inline-flex;
+    gap: .3rem;
+}
+
+.search__nav{
+    display: flex;
+    font-size: 6px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+}
+
+#search-nav{
+    width: 7px;
+    height: 7px;
+}
+
+.nav__toggle{
+    width: 8px;
+    height: 8px;
+}
+
+.nav__body{
+    display: block;
+    position: relative;
+    margin: 40px 60px;
+    width: 6.5rem;   
+}
+
+.nav__h1 {
+    display: flex;
+    font-size: 10px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.nav__body p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 5px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.nav-im{
+    display: inline-flex;
+    gap: .3rem;
+    width: 50px;
+    height: 15px;
+}
+
+    /* ============= Home =============== */
+
+.home__container{
+    padding: 40px;
+    display: flex;
+    gap: 40px;
+}
+
+.home__head{
+    width: 8rem;
+    position: relative;
+    flex-direction: column;
+}
+
+.home__h1{
+    font-size: 11px; 
+    font-family: 'Lato', sans-serif; 
+    font-weight: 700; 
+    line-height: 15px; 
+    padding-bottom: 5px;
+}
+
+
+.home__episode{
+    justify-content: flex-start; 
+    align-items: center; 
+    gap: 12px; 
+    display: inline-flex;
+}
+
+.home__episode-circle{
+    width: 25px; 
+    height: 25px; 
+    border-radius: 3.5rem; 
+    border: 2px #CECECE solid;
+}
+
+.epi{
+    font-size: 7px; 
+    font-family: 'Lato', sans-serif; 
+    font-weight: 600; 
+}
+
+.home__epi-cat{
+    justify-content: flex-start; 
+    align-items: flex-start; 
+}
+
+.cat{
+    color: #8E8B8C; 
+    font-size: 7px; 
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 400; 
+}
+
+.tex{
+    width: 9rem; 
+    font-size: 5px;
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 400; 
+    line-height: 7px; 
+    padding-bottom: .5rem;
+}
+
+.home__epi-page{
+    font-size: 5px; 
+    font-family: 'Lato', sans-serif; 
+    font-weight: 700; 
+    display: inline-flex;
+    gap: .5rem;
+}
+
+
+.ico{
+    width: 7px; 
+    height: 7px;
+}
+
+.home__epi-img{
+    width: 18rem;
+}
+
+.new-epi{
+    transform-origin: 37% 380%;
+    transform: rotate(270deg); 
+    color: #eceaea; 
+    font-size: 12px; 
+    font-family: 'Lato', sans-serif; 
+    font-weight: 600; 
+}
+
+.new__epi-img{
+    width: 120px; 
+    height: 120px; 
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.08); 
+    display: inline-flex;
+}
+
+    /* ============= Podcast =============== */
+
+.podcast__container{
+    background: #F7F7F7; 
+}
+
+.podcast__sub-container{
+    padding: 1rem 0;
+}
+
+.podcast__h1{
+    text-align: center; 
+    font-size: 12px; 
+    font-family: 'Lato', sans-serif; 
+    font-weight: 700; 
+    line-height: 20px; 
+}
+
+.podcast__h1-p{
+    text-align: center; 
+    font-size: 7px; 
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 400; 
+    line-height: 20px; 
+}
+
+.podcast__content{
+    overflow: hidden;
+    white-space: nowrap;
+    padding-bottom: 1rem;
+}
+
+.podcast__content:hover{
+    overflow-x: auto;
+}
+
+.podcast__first-content{
+    gap: 15px; 
+    display: flex;
+}
+
+.podcast__sub{
+    background: white; 
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.08); 
+    border-radius: 10px; 
+    display: flex;
+}
+
+.podcast__child{
+    position: relative; 
+    width: 8rem;
+    border-radius: 10px;
+}
+
+
+.podcast__bag{
+    width: 15px; 
+    height: 15px; 
+    left: 110px; 
+    top: 3px; 
+    position: absolute; 
+    background: white; 
+    border-radius: 3px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.podcast__bag-sub{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10px;
+    height: 10px;
+}
+
+
+.podcast__text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.podcast__sub-2{
+    flex-shrink: 0;
+    padding: 8px;
+    position: relative;
+    display: inline;
+}
+
+.podcast__epi7{
+    display: inline-flex;
+}
+
+.epi__7{
+    color: #8E8B8C; 
+    font-size: 7px; 
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 400; 
+    line-height: 15px; 
+}
+
+.epi__7-tec{
+    color: #8E8B8C; 
+    font-size: 7px; 
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 400; 
+    line-height: 15px; 
+}
+
+.podcast__srkp{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 97%, black 97%); 
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.srkp{
+    font-size: 10px; 
+    font-family: 'Lato', sans-serif; 
+    font-weight: 700; 
+    line-height: 20px; 
+    word-wrap: break-word;
+}
+
+.podcast__epi-page{
+    position: relative; 
+    padding-top: 15px;
+}
+
+.epi-page{
+    font-size: 7px; 
+    font-family: 'Lato', sans-serif; 
+    font-weight: 700; 
+    display: flex;
+    gap: .5rem;
+}
+
+.body63{
+    padding-top: 2rem;
+    margin: auto;
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    display: flex;
+}
+
+.body64{
+    width: 2px; 
+    height: 2px; 
+    background: black; 
+    border-radius: 3px;
+}
+
+.body65 {
+    background: black; 
+    border-radius: 3px; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    display: inline-flex;
+}
+
+.body66 {
+    width: 2px; 
+    height: 2px; 
+    position: relative; 
+    background: black; 
+    border-radius: 3px; 
+    display: inline-flex;
+}
+
+.body67{
+    width: 2px; 
+    height: 2px; 
+    background: black; 
+    border-radius: 3px;
+}
+
+.body68{
+    width: 2px; 
+    height: 2px; 
+    background: black; 
+    border-radius: 3px;
+}
+
+    /* ============= Essential =============== */
+
+.essential__container{
+    margin: 30px 40px; 
+    position: relative;
+    display: flex;
+    gap: 10rem;
+}
+
+.essential__epi-text{
+    position: relative; 
+    font-size: 15px; 
+    font-family: 'Lato', sans-serif; 
+    font-weight: 700; 
+}
+
+ .essential__view-text{
+    display: inline-flex;
+    font-size: 7px; 
+    font-family: Lato; 
+    font-weight: 700; 
+}
+
+.arrow{
+    width: 15px;
+    height: 12px;
+    gap: 1rem;
+}
+
+.essential__sub-container{
+    margin: 0 30px;
+    position: relative;
+    display: block;
+    height: 21rem;
+}
+
+.essen {
+    display: inline-flex;
+}
+
+.essen1{
+    display: inline-flex;
+}
+
+.essential__first,
+.essential__first1{
+    width: 6rem; 
+    height: 11rem; 
+    margin: 5px;
+    position: relative; 
+    background: rgba(255, 255, 255, 0); 
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.08); 
+    border-radius: 4px;
+    display: block;
+}
+
+.essential__first-sub{
+    width: 6rem; 
+    height: 6rem; 
+    position: relative; 
+}
+
+.body-img6{
+    border-top-left-radius: 5px; 
+    border-top-right-radius: 5px; 
+}
+
+.essential__main-text{
+    position: relative;
+    padding: 5px;
+}
+
+.essential__sub-text{
+    display: inline-flex;
+    gap: 2px;
+}
+
+.essential__epi{
+    color: #8E8B8C; 
+    font-size: 7px; 
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 400; 
+    line-height: 8px; 
+}
+
+.essential__tec-text{
+    /* width: 74px;  */
+    color: #8E8B8C; 
+    font-size: 7px; 
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 400; 
+    line-height: 8px; 
+}
+
+.essential__srkp{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 97%, black 97%); 
+    justify-content: center; 
+    align-items: center; 
+    display: inline-flex;
+}
+
+.srkpp{
+    font-size: 9px; 
+    font-family: 'Lato', sans-serif; 
+    font-weight: 700; 
+    line-height: 8px; 
+}
+
+.essential__shar{
+    margin-top: 6px;
+    padding-right: 10px; 
+    position: relative; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    gap: 2px; 
+    display: inline-flex;
+}
+
+.share{
+    color: #8E8B8C; 
+    font-size: 7px; 
+    font-family: 'Lato', sans-serif; 
+    font-weight: 400; 
+    display: flex;
+    gap: .4rem;
+}
+
+.sha{
+    width: 7px;
+    height: 7px;
+}
+
+.body91{
+    width: 12px; 
+    height: 12px; 
+    left: 80px; 
+    top: 4px; 
+    position: absolute; 
+    background: white; 
+    border-radius: 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.body93{
+    width: 5px; 
+    height: 7px; 
+}
+
+    /* ============= Video =============== */
+
+.video__container{
+    background-image: url("/assets/img/h1-video-paralax-img-2048x758.jpg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 12rem;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+    .video{
+        width: 25px; 
+        height: 25px; 
+        position: relative;
+        background: white; 
+        border-radius: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+        
+    .videos{
+        width: 15px; 
+        height: 15px; 
+    }
+
+    /* ================ Meet ================ */
+
+    .meet__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 10px 0;
+        gap: 5.5rem;
+    }
+    
+    .meet__h1{
+        position: relative; 
+        font-size: 15px; 
+        font-family: 'Lato', sans-serif; 
+        font-weight: 700; 
+    }
+    
+    .meet__h1-p{
+        position: relative; 
+        font-size: 7px; 
+        font-family: Lato; 
+        font-weight: 700; 
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .meet__main-content{
+        margin: 10px 50px;
+        position: relative; 
+        gap: 20px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .meet__first{
+        width: 5rem;
+        height: 10rem; 
+        background: rgba(255, 255, 255, 0); 
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.08); 
+        border-radius: 10px; 
+    }
+        
+    .meet__sub{
+        padding: 10px;
+    }
+    
+    .meet__name{
+        font-size: 10px; 
+        font-family: 'Lato', sans-serif; 
+        font-weight: 700; 
+        padding-bottom: 4px;
+    }
+    
+    .meet__title{
+        color: #8E8B8C; 
+        font-size: 6px; 
+        font-family: 'Open Sans', sans-serif; 
+        font-weight: 400;
+        padding-bottom: 1px; 
+    }
+    
+    .meet__socials{
+        gap: 1px; 
+        display: inline-flex;
+    }
+    
+    .meet__socials-sub{
+        width: 10px; 
+        height: 10px; 
+        background: #8E8B8C; 
+        border-radius: 11px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .social{
+        width: 5px; 
+        height: 5px; 
+    }
+        
+    /* ================ Timmy ================ */
+
+    .timmy__container{
+        width: 70%;
+        height: 5rem; 
+        left: 50px; 
+        top: 170px; 
+        position: absolute; 
+        background: white; 
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.08); 
+        border-radius: 10px; 
+        display: inline-flex;
+    }
+    
+    .timmy__img{
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    
+    .timmy__sub-container{
+        padding: 10px; 
+        flex-direction: column; 
+        align-items: center;    }
+    
+    .timmy__content{
+        display: flex;
+        gap: 3.3rem;
+        /* position: relative; */
+        padding-bottom: .2rem;
+    }
+    
+    .timmy__mike{
+        width: 4rem; 
+        position: relative; 
+        font-size: 7px; 
+        font-family: 'Lato', sans-serif; 
+        font-weight: 700; 
+    }
+    
+    .timmy__epi{
+        font-size: 6px; 
+        font-family: 'Lato', sans-serif; 
+        font-weight: 700; 
+        display: flex;
+        gap: .02rem;
+    }
+
+    .tim {
+        width: 10px;
+        height: 7px;
+    }
+    
+    .timmy__body{
+        justify-content: space-around; 
+        gap: 2px;
+        align-items: flex-start; 
+        display: inline-flex;
+        padding-bottom: .2rem;
+    }
+    
+    
+    .body-epi1,
+    .body-mic,
+    .time,
+    .secs,
+    .secc{
+        color: #8E8B8C; 
+        font-size: 6px; 
+        font-family: 'Open Sans', sans-serif; 
+        font-weight: 400; 
+    }
+    
+        
+    .timmy__body3{
+        justify-content: flex-start; 
+        align-items: center; 
+        gap: 2px; 
+        display: inline-flex;
+    }
+    
+    .timmy__empty{
+        width: 20px; 
+        height: 20px; 
+        position: relative; 
+        border-radius: 70px; 
+        border: 2px #CECECE solid;
+    }
+    
+    .timmy__10s{
+        padding-top: 5px; 
+    }
+        
+    
+    input[type="range"]{
+        
+        background: #000;
+        width: 4rem;
+        outline: none;
+        height: 2px;
+    }
+    
+    input[type="range"]::-webkit-slider-thumb {
+        background-color: #000;
+        cursor: pointer;
+    }
+    
+    .timmy__body7{
+        padding-top: 6px; 
+        display: flex;
+    }
+        
+    .timmy__body8{
+        padding-top: 6px;
+    }
+    
+    
+    .speak{
+        width: 8px; 
+        height: 8px;
+    }
+    
+    /* ================ Footer ================ */
+    .footer__top-container{
+        height: 6rem;
+        padding-left: 4rem; 
+        background: black; 
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border: .5px #8E8B8C solid;
+    }
+    
+    .footer__sub{
+        position: relative;
+        top: 10px; 
+        display: inline-flex;
+        gap: 3rem;
+    }
+    
+    .footer__text{
+        width: 10rem; 
+        color: white; 
+        font-size: 6px; 
+        font-family: 'Lato', sans-serif; 
+        font-weight: 500; 
+        line-height: 7px; 
+    }
+    
+    .footer__img{
+        padding-top: 0px; 
+        flex-direction: column; 
+        justify-content: center; 
+    }
+    
+    .foot-img{
+        width: 60px; 
+        height: 10px;
+    }
+    
+    .footer__great{
+        color: #f8f5f5; 
+        font-size: 6px; 
+        font-family: 'Open Sans' sans-serif; 
+        font-weight: 400; 
+    }
+    
+    .footer__bottom-container{
+        height: 8rem;
+        background: black; 
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        border: .5px solid #969696;
+        padding-right: 1rem;
+    }
+    
+    .footer__bot{
+        display: inline-flex;
+        gap: .1rem;
+    }
+    
+    .footer__bott{
+        width: 70px; 
+        gap: 5px;
+        position: relative; 
+        flex-direction: column; 
+        display: inline-flex;
+    }
+    
+    .footer__bo{
+        gap: 5px;
+        position: relative; 
+        flex-direction: column; 
+        display: inline-flex;
+    }
+    
+    .footer__bot-sub{
+        flex-direction: column; 
+        gap: 23px;
+    }
+    
+    .footer__start{
+        padding-bottom: 10px;
+        color: #969696; 
+        font-size: 6px;  
+        font-family: 'Lato', sans-serif; 
+        font-weight: 700; 
+    }
+    
+    
+    .footer__contact{
+        color: #969696; 
+        font-size: 6px;
+        font-family: 'Open Sans', sans-serif; 
+        font-weight: 400; 
+    }
+    
+    .footer__empty1{
+        height: 1px; 
+        border-bottom: 1px black solid;
+    }
+    
+    .footer__terms{
+        color: #CCCCCC; 
+        font-size: 6px; 
+        font-family: Open Sans; 
+        font-weight: 400; 
+    }
+    
+    
+    .footer__9{
+        gap: 5px; 
+        display: inline-flex;
+        align-self: stretch; 
+    
+    }
+    
+    .footer__10{
+        height: 1px; 
+        border-bottom: 1px black solid;
+    }
+    
+    .footer__11{
+        padding-top: 0px; 
+        padding-right: 0px; 
+    }
+    
+    .footer__12{
+        width: 100px; 
+        height: 8px;
+    }
+    
+    .footer__13{
+        color: #969696; 
+        font-size: 5px;
+        font-family: 'Open Sans', sans-serif; 
+        font-weight: 400; 
+    }
+    
+    .footer__14{
+        color: #CCCCCC; 
+        font-size: 5px; 
+        font-family: 'Open Sans', sans-serif; 
+        font-weight: 400; 
+    }
+    
+    .footer__15{
+        color: #969696; 
+        font-size: 5px;
+        font-family: 'Open Sans', sans-serif; 
+        font-weight: 400; 
+    }
+    
+/* Media query for screens with a minimum width of 420px */
+@media screen and (min-width: 420px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+  
+    header {
+      background-size: cover;
+    }
+  
+    .nav{
+        padding: .5rem;
+    }
+    .nav__menu {
+      padding-bottom: .5rem;
+    }
+  
+    .nav__logo {
+      width: 3rem;
+    }
+  
+    .nav__list {
+      column-gap: 0.4rem;
+    }
+  
+    .nav__link {
+      font-size: 6px;
+    }
+  
+    .nav__buttons {
+      gap: 0.3rem;
+    }
+  
+    .search__nav{
+        font-size: 6px;
+    }
+
+    #search-nav {
+        width: 7px;
+        height: 7px;
+    }
+
+    .nav__toggle{
+        width: 8px;
+        height: 8px;
+    }
+
+    .nav__body {
+      margin: 40px 60px;
+      width: 6.5rem;
+    }
+  
+    .nav__h1 {
+      font-size: 10px;
+    }
+  
+    .nav__body p {
+      font-size: 5px;
+      padding-bottom: 20px;
+    }
+  
+    .nav-im{
+        gap: 0.3rem;
+        width: 50px;
+        height: 15px;
+    }
+
+       /* ============= Home =============== */
+
+    .home__container {
+      padding: 70px;
+      gap: 40px;
+    }
+  
+    .home__head {
+      width: 8rem;
+    }
+  
+    .home__h1 {
+      font-size: 11px;
+      line-height: 15px;
+        padding-bottom: 5px;
+    }
+  
+    .home__episode-circle {
+      width: 25px; 
+      height: 25px;
+    }
+  
+    .home__episode{
+        gap: 12px;
+    }
+    .epi,
+    .cat{
+        font-size: 7px;
+    }
+
+    .tex,
+    .home__epi-page{
+        width: 9rem;
+        font-size: 5px;
+        padding-bottom: .5rem;
+        line-height: 7px;
+    }
+
+    .ico{
+        padding-top: 0px;
+        width: 7px;
+        height: 7px;
+    }
+
+    .home__epi-img {
+      width: 18rem;
+    }
+    .new-epi {
+        font-size: 12px;
+        transform-origin: 37% 380%;
+    }
+
+    .new__epi-img{
+        width: 120px;
+        height: 120px;
+    }
+
+        /* ============= Podcast =============== */
+
+        .podcast__sub-container{
+            padding: 1rem 0;
+        }
+
+        .podcast__h1{
+            font-size: 12px;
+        }
+
+        .podcast__h1-p{
+            font-size: 7px;
+            line-height: 20px;
+        }
+        
+        .podcast__first-content{
+            gap: 15px;
+        }
+
+        .podcast__content{
+            padding-bottom: 1rem;
+        }
+
+        .podcast__child{
+            width: 8rem;
+        }
+
+        .podcast__bag{
+            width: 15px;
+            height: 15px;
+            left: 110px;
+            top: 3px;
+        }
+
+        .podcast__bag-sub{
+            width: 10px;
+            height: 10px;
+        }
+
+        .podcast__sub-2{
+            padding: 8px;
+        }
+
+        .epi__7,
+        .epi__7-tec,
+        .epi-page{
+            font-size: 7px;
+            line-height: 15px;
+        }
+
+        .srkp{
+            font-size: 10px;
+            line-height: 20px;
+        }
+
+        .body63{
+            gap: 10px;
+        }
+
+        .body64,
+        .body66,
+        .body67,
+        .body68{
+            width: 2px;
+            height: 2px;
+        }
+            /* ============= Essential =============== */
+
+        .essential__container{
+            gap: 6rem;
+            margin: 30px 55px;
+        }
+
+        .essential__epi-text{
+            font-size: 15px;
+        }
+
+        .essential__view-text{
+            font-size: 7px;
+        }
+
+        .arrow{
+            width: 15px;
+            height: 12px;
+        }
+
+        .essential__first,
+        .essential__first1{
+            width: 6rem;
+            height: 11rem;
+            margin: 8px;
+            border-radius: 4px;
+        }
+
+        .essential__first-sub{
+            width: 6rem;
+            height: 6rem;
+        }
+
+        .body-img6{
+            border-top-left-radius: 5px; 
+            border-top-right-radius: 5px; 
+        }        
+
+        .essential__sub-container{
+            height: 25rem;
+            margin: 0 45px;
+        }
+
+        .essential__epi,
+        .essential__tec-text{
+            font-size: 7px;
+            line-height: 8px;
+        }
+
+        .essential__main-text{
+            padding: 5px;
+        }
+
+        .srkpp{
+            font-size: 7px;
+            line-height: 10px;
+        }
+
+        .essential__shar{
+            margin-top: 6px;
+        }
+
+        .share{
+            font-size: 7px;
+            gap: .4rem;
+        }
+
+        .sha{
+            width: 7px;
+            height: 7px;
+        }
+
+        .body91{
+            width: 12px;
+            height: 12px;
+            left: 80px;
+            top: 4px;
+        }
+
+        .body93{
+            width: 5px;
+            height: 7px;
+        }
+
+            /* ============= Video =============== */
+
+        .video__container{
+            background-size: cover;
+            height: 12rem;
+        }
+
+        .video{
+            width: 25px;
+            height: 25px;
+        }
+
+        .videos{
+            width: 15px;
+            height: 15px;
+        }
+
+            /* ================ Meet ================ */
+
+        .meet__container{
+            margin: 10px 0;
+            gap: 5.5rem;
+        }
+
+        .meet__h1{
+            font-size: 15px;
+        }
+
+        .meet__h1-p{
+            font-size: 7px;
+        }
+
+        .meet__main-content{
+            margin: 10px 50px;
+            gap: 20px;
+        }
+
+        .meet__first{
+            width: 5rem;
+            height: 10rem;
+        }
+
+        .meet__sub{
+            padding: 10px;
+        }
+
+        .meet__name{
+            font-size: 10px;
+            padding-bottom: 4px;
+        }
+
+        .meet__title{
+            font-size: 6px;
+            padding-bottom: 1px;
+        }
+
+        .meet__socials{
+            gap: 1px;
+        }
+
+        .meet__socials-sub{
+            width: 10px;
+            height: 10px;
+        }
+
+        .social{
+            width: 5px;
+            height: 5px;
+        }
+
+            /* ================ Timmy ================ */
+
+        .timmy__container{
+            height: 5rem; 
+            left: 65px; 
+            top: 170px; 
+        }
+
+        .timmy__sub-container{
+            padding: 10px; 
+        }
+
+        .timmy__content{
+            gap: 3.3rem;
+            padding-bottom: .2rem;
+        }
+
+        .timmy__mike{
+            font-size: 7px;
+            width: 4rem;
+        }
+
+        .timmy__epi{
+            font-size: 6px;
+            gap: .02rem;
+        }
+
+        .tim{
+            width: 10px;
+            height: 7px;
+        }
+
+        .timmy__body{
+            gap: 2px;
+            padding-bottom: .2rem;
+        }
+
+        .body-epi1,
+        .body-mic,
+        .time,
+        .secs,
+        .secc{
+            font-size: 6px;
+        }
+
+        .timmy__body3{
+            gap: 2px;
+        }
+
+        .timmy__empty{
+            width: 20px;
+            height: 20px;
+        }
+
+        .timmy__10s{
+            padding-top: 5px;
+        }
+
+        input[type="range"]{
+            width: 4rem;
+            height: 2px;
+        }
+        
+        input[type="range"]::-webkit-slider-thumb {
+           width: 3px;
+           height: 3px;
+        }
+
+        .speak{
+            width: 8px;
+            height: 8px;
+        }
+
+            /* ================ Footer ================ */
+
+    .footer__top-container{
+        height: 6rem;
+        padding-left: 4rem; 
+    }
+    
+    .footer__sub{
+        top: 10px; 
+        gap: 3rem;
+    }
+    
+    .footer__text{
+        width: 10rem; 
+        font-size: 6px; 
+        line-height: 7px; 
+    }
+
+    .footer__img{
+        padding-top: 0px; 
+    }
+    
+    .foot-img{
+        width: 60px; 
+        height: 10px;
+    }
+
+    .footer__great{
+        font-size: 6px; 
+    }
+
+    .footer__bottom-container{
+        height: 8rem;
+        padding-right: 1rem;
+    }
+    
+    .footer__bot{
+        display: inline-flex;
+        gap: .1rem;
+    }
+    
+    .footer__bott{
+        width: 70px; 
+        gap: 5px;
+    }
+    
+    .footer__bo{
+        gap: 5px;
+    }
+        
+    .footer__start{
+        padding-bottom: 10px;
+        font-size: 6px;  
+    }
+    
+    .footer__contact{
+        font-size: 6px;
+    }
+    
+    
+    .footer__terms{
+        font-size: 6px; 
+    }
+    
+    
+    .footer__9{
+        gap: 5px;     
+    }
+    
+    .footer__11{
+        padding-top: 0;
+        padding-right: 0;
+    }
+    
+    .footer__12{
+        width: 100px; 
+        height: 8px;
+    }
+    
+    .footer__13,
+    .footer__14,
+    .footer__15{
+        font-size: 5px;
+    }
+  }
+
+
+/* Media query for screens with a minimum width of 750px */
+@media screen and (min-width: 740px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+  
+    header {
+      background-size: cover;
+    }
+  
+    .nav{
+        padding: 1rem;
+    }
+    .nav__menu {
+      padding-bottom: 1rem;
+    }
+  
+    .nav__logo {
+      width: 4.5rem;
+    }
+  
+    .nav__link,
+    .search__nav {
+      font-size: 10px;
+    }
+  
+
+    #search-nav {
+        width: 10px;
+        height: 10px;
+    }
+
+    .nav__toggle{
+        width: 12px;
+        height: 12px;
+    }
+
+    .nav__body {
+      margin: 70px 100px;
+      width: 15rem;
+    }
+  
+    .nav__h1 {
+      font-size: 20px;
+    }
+  
+    .nav__body p {
+      font-size: 11px;
+      padding-bottom: 30px;
+    }
+  
+    .nav-im{
+        gap: 1rem;
+        width: 105px;
+        height: 40px;
+    }
+
+       /* ============= Home =============== */
+
+    .home__container {
+      padding: 70px 90px;
+      gap: 90px;
+    }
+  
+    .home__head {
+      width: 25rem;
+    }
+  
+    .home__h1 {
+      font-size: 25px;
+      line-height: 25px;
+      padding-bottom: 10px;
+    }
+  
+    .home__episode-circle {
+      width: 40px; 
+      height: 40px;
+    }
+  
+    .home__episode{
+        gap: 12px;
+    }
+    .epi,
+    .cat{
+        font-size: 10px;
+    }
+
+    .tex,
+    .home__epi-page{
+        width: 18rem;
+        font-size: 10px;
+        padding-bottom: 1rem;
+        line-height: 12px;
+    }
+
+    .ico{
+        padding-top: 0px;
+        width: 11px;
+        height: 10px;
+    }
+
+    .home__epi-img {
+      width: 30rem;
+    }
+    .new-epi {
+        font-size: 23px;
+        transform-origin: 37% 380%;
+    }
+
+    .new__epi-img{
+        width: 220px;
+        height: 220px;
+    }
+
+        /* ============= Podcast =============== */
+
+        .podcast__sub-container{
+            padding: 2rem 0;
+        }
+
+        .podcast__h1{
+            font-size: 25px;
+        }
+
+        .podcast__h1-p{
+            font-size: 11px;
+            line-height: 35px;
+        }
+        
+        .podcast__first-content{
+            gap: 25px;
+        }
+
+        .podcast__content{
+            padding-bottom: 1rem;
+        }
+
+        .podcast__child{
+            width: 11rem;
+        }
+
+        .podcast__bag{
+            width: 25px;
+            height: 25px;
+            left: 145px;
+            top: 5px;
+        }
+
+        .podcast__bag-sub{
+            width: 15px;
+            height: 15px;
+        }
+
+        .podcast__sub-2{
+            padding: 15px;
+        }
+
+        .epi__7,
+        .epi__7-tec,
+        .epi-page{
+            font-size: 9px;
+            line-height: 20px;
+        }
+
+        .srkp{
+            font-size: 12px;
+            line-height: 25px;
+        }
+
+        .arrow{
+            width: 15px;
+            height: 12px;
+        }
+
+        .body63{
+            gap: 15px;
+        }
+
+        .body64,
+        .body66,
+        .body67,
+        .body68{
+            width: 3px;
+            height: 3px;
+        }
+            /* ============= Essential =============== */
+
+        .essential__container{
+            gap: 12rem;
+            margin: 35px 100px;
+        }
+
+        .essential__epi-text{
+            font-size: 25px;
+        }
+
+        .essential__view-text{
+            font-size: 11px;
+        }
+
+        .arrow{
+            width: 15px;
+            height: 12px;
+        }
+
+        .essential__first,
+        .essential__first1{
+            width: 10rem;
+            height: 16rem;
+            margin: 17px;
+            border-radius: 9px;
+        }
+
+        .essential__first-sub{
+            width: 10rem;
+            height: 10rem;
+        }
+
+        .body-img6{
+            border-top-left-radius: 9px; 
+            border-top-right-radius: 9px; 
+        }        
+
+        .essential__sub-container{
+            height: 35rem;
+            margin: 0 90px;
+        }
+
+        .essential__epi,
+        .essential__tec-text{
+            font-size: 9px;
+            line-height: 12px;
+        }
+
+        .essential__main-text{
+            padding: 15px;
+        }
+
+        .srkpp{
+            font-size: 11px;
+            line-height: 12px;
+        }
+
+        .essential__shar{
+            margin-top: 10px;
+        }
+
+        .share{
+            font-size: 9px;
+            gap: .6rem;
+        }
+
+        .sha{
+            width: 10px;
+            height: 10px;
+        }
+
+        .body91{
+            width: 25px;
+            height: 25px;
+            left: 125px;
+            top: 10px;
+        }
+
+        .body93{
+            width: 11px;
+            height: 12px;
+        }
+
+            /* ============= Video =============== */
+
+        .video__container{
+            background-size: cover;
+            height: 17rem;
+        }
+
+        .video{
+            width: 40px;
+            height: 40px;
+        }
+
+        .videos{
+            width: 20px;
+            height: 20px;
+        }
+
+            /* ================ Meet ================ */
+
+        .meet__container{
+            margin: 15px 0;
+            gap: 18rem;
+        }
+
+        .meet__h1{
+            font-size: 25px;
+        }
+
+        .meet__h1-p{
+            font-size: 11px;
+        }
+
+        .meet__main-content{
+            margin: 20px 80px;
+            gap: 30px;
+        }
+
+        .meet__first{
+            width: 11rem;
+            height: 20rem;
+        }
+
+        .meet__sub{
+            padding: 20px;
+        }
+
+        .meet__name{
+            font-size: 15px;
+            padding-bottom: 7px;
+        }
+
+        .meet__title{
+            font-size: 9px;
+            padding-bottom: 3px;
+        }
+
+        .meet__socials{
+            gap: 5px;
+        }
+
+        .meet__socials-sub{
+            width: 15px;
+            height: 15px;
+        }
+
+        .social{
+            width: 10px;
+            height: 10px;
+        }
+
+            /* ================ Timmy ================ */
+
+        .timmy__container{
+            height: 8rem; 
+            left: 115px; 
+            top: 300px; 
+        }
+
+        .timmy__sub-container{
+            padding: 20px; 
+        }
+
+        .timmy__content{
+            gap: 11rem;
+            padding-bottom: .5rem;
+        }
+
+        .timmy__mike{
+            font-size: 14px;
+            width: 7rem;
+        }
+
+        .timmy__epi{
+            font-size: 10px;
+            gap: .3rem;
+        }
+
+        .tim{
+            width: 10px;
+            height: 10px;
+        }
+
+        .timmy__body{
+            gap: 5px;
+            padding-bottom: .5rem;
+        }
+
+        .body-epi1,
+        .body-mic,
+        .time,
+        .secs,
+        .secc{
+            font-size: 10px;
+        }
+
+        .timmy__body3{
+            gap: 5px;
+        }
+
+        .timmy__empty{
+            width: 35px;
+            height: 35px;
+        }
+
+        .timmy__10s{
+            padding-top: 10px;
+        }
+
+        input[type="range"]{
+            width: 12rem;
+            height: 1px;
+        }
+        
+        input[type="range"]::-webkit-slider-thumb {
+           width: 3px;
+           height: 3px;
+        }
+
+        .speak{
+            width: 13px;
+            height: 13px;
+        }
+
+            /* ================ Footer ================ */
+
+    .footer__top-container{
+        height: 8rem;
+        padding-left: 8rem; 
+    }
+    
+    .footer__sub{
+        top: 15px; 
+        gap: 5rem;
+    }
+    
+    .footer__text{
+        width: 15rem; 
+        font-size: 12px; 
+        line-height: 15px; 
+    }
+
+    .footer__img{
+        padding-top: 0px; 
+    }
+    
+    .foot-img{
+        width: 90px; 
+        height: 15px;
+    }
+
+    .footer__great{
+        font-size: 9px; 
+    }
+
+    .footer__bottom-container{
+        height: 12rem;
+        padding-right: 2rem;
+    }
+    
+    .footer__bot{
+        display: inline-flex;
+        gap: 3rem;
+    }
+    
+    .footer__bott{
+        width: 80px; 
+        gap: 10px;
+    }
+    
+    .footer__bo{
+        gap: 5px;
+    }
+        
+    .footer__start{
+        padding-bottom: 10px;
+        font-size: 11px;  
+    }
+    
+    .footer__contact{
+        font-size: 10px;
+    }
+    
+    
+    .footer__terms{
+        font-size: 10px; 
+    }
+    
+    
+    .footer__9{
+        gap: 10px;     
+    }
+    
+    .footer__11{
+        padding-top: 0;
+        padding-right: 0;
+    }
+    
+    .footer__12{
+        width: 185px; 
+        height: 15px;
+    }
+    
+    .footer__13,
+    .footer__14,
+    .footer__15{
+        font-size: 5px;
+    }
+    
+
+  }
+
+
+  /* Media query for screens with a minimum width of 750px */
+@media only screen and (min-width: 950px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+  
+    header {
+      background-size: cover;
+    }
+  
+    .nav{
+        padding: 3rem;
+    }
+    .nav__menu {
+      padding-bottom: 1rem;
+    }
+  
+    .nav__logo {
+      width: 6.5rem;
+    }
+  
+    .nav__list{
+        column-gap: 1.5rem;
+    }
+
+    .nav__link,
+    .search__nav {
+      font-size: 15px;
+    }
+  
+
+    #search-nav {
+        width: 15px;
+        height: 15px;
+    }
+
+    .nav__toggle{
+        width: 15px;
+        height: 15px;
+    }
+
+    .nav__body{
+      margin: 70px 100px;
+      width: 20rem;
+    }
+  
+    .nav__h1 {
+      font-size: 30px;
+    }
+  
+    .nav__body p {
+      font-size: 15px;
+      padding-bottom: 30px;
+    }
+  
+    .nav-im{
+        gap: 1rem;
+        width: 120px;
+        height: 45px;
+    }
+
+       /* ============= Home =============== */
+
+    .home__container {
+      padding: 100px;
+      gap: 90px;
+    }
+  
+    .home__head {
+      width: 32rem;
+    }
+  
+    .home__h1 {
+      font-size: 30px;
+      line-height: 30px;
+      padding-bottom: 10px;
+    }
+  
+    .home__episode-circle {
+      width: 50px; 
+      height: 50px;
+    }
+  
+    .home__episode{
+        gap: 16px;
+    }
+    .epi,
+    .cat{
+        font-size: 15px;
+    }
+
+    .tex,
+    .home__epi-page{
+        width: 25rem;
+        font-size: 14px;
+        padding-bottom: 1rem;
+        line-height: 18px;
+    }
+
+    .ico{
+        padding-top: 0px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .home__epi-img {
+      width: 30rem;
+    }
+    .new-epi {
+        font-size: 35px;
+        transform-origin: 37% 380%;
+    }
+
+    .new__epi-img{
+        width: 300px;
+        height: 300px;
+    }
+
+        /* ============= Podcast =============== */
+
+        .podcast__sub-container{
+            padding: 2rem 0;
+        }
+
+        .podcast__h1{
+            font-size: 30px;
+        }
+
+        .podcast__h1-p{
+            font-size: 15px;
+            line-height: 35px;
+        }
+        
+        .podcast__first-content{
+            gap: 35px;
+        }
+
+        .podcast__content{
+            padding-bottom: 1rem;
+        }
+
+        .podcast__child{
+            width: 14rem;
+        }
+
+        .podcast__bag{
+            width: 35px;
+            height: 35px;
+            left: 180px;
+            top: 10px;
+        }
+
+        .podcast__bag-sub{
+            width: 20px;
+            height: 20px;
+        }
+
+        .podcast__sub-2{
+            padding: 15px;
+        }
+
+        .epi__7,
+        .epi__7-tec,
+        .epi-page{
+            font-size: 12px;
+            line-height: 20px;
+        }
+
+        .srkp{
+            font-size: 15px;
+            line-height: 25px;
+        }
+
+        .arrow{
+            width: 15px;
+            height: 15px;
+        }
+
+        .body63{
+            gap: 15px;
+        }
+
+        .body64,
+        .body66,
+        .body67,
+        .body68{
+            width: 3px;
+            height: 3px;
+        }
+            /* ============= Essential =============== */
+
+        .essential__container{
+            gap: 20rem;
+            margin: 35px 150px;
+        }
+
+        .essential__epi-text{
+            font-size: 30px;
+        }
+
+        .essential__view-text{
+            font-size: 15px;
+        }
+
+        .arrow{
+            width: 15px;
+            height: 15px;
+        }
+
+        .essential__first,
+        .essential__first1{
+            width: 13rem;
+            height: 20rem;
+            margin: 15px;
+            border-radius: 10px;
+        }
+
+        .essential__first-sub{
+            width: 13rem;
+            height: 13rem;
+        }
+
+        .body-img6{
+            border-top-left-radius: 9px; 
+            border-top-right-radius: 9px; 
+        }        
+
+        .essential__sub-container{
+            height: 45rem;
+            margin: 0 150px;
+        }
+
+        .essential__epi,
+        .essential__tec-text{
+            font-size: 12px;
+            line-height: 12px;
+        }
+
+        .essential__main-text{
+            padding: 15px;
+        }
+
+        .srkpp{
+            font-size: 15px;
+            line-height: 17px;
+        }
+
+        .essential__shar{
+            margin-top: 10px;
+        }
+
+        .share{
+            font-size: 12px;
+            gap: .6rem;
+        }
+
+        .sha{
+            width: 15px;
+            height: 15px;
+        }
+
+        .body91{
+            width: 35px;
+            height: 35px;
+            left: 160px;
+            top: 10px;
+        }
+
+        .body93{
+            width: 15px;
+            height: 15px;
+        }
+
+            /* ============= Video =============== */
+
+        .video__container{
+            background-size: cover;
+            height: 23rem;
+        }
+
+        .video{
+            width: 60px;
+            height: 60px;
+        }
+
+        .videos{
+            width: 30px;
+            height: 30px;
+        }
+
+            /* ================ Meet ================ */
+
+        .meet__container{
+            margin: 15px 0;
+            gap: 18rem;
+        }
+
+        .meet__h1{
+            font-size: 30px;
+        }
+
+        .meet__h1-p{
+            font-size: 15px;
+        }
+
+        .meet__main-content{
+            margin: 30px 80px;
+            gap: 30px;
+        }
+
+        .meet__first{
+            width: 12.5rem;
+            height: 21rem;
+        }
+
+        .meet__sub{
+            padding: 20px;
+        }
+
+        .meet__name{
+            font-size: 18px;
+            padding-bottom: 7px;
+        }
+
+        .meet__title{
+            font-size: 12px;
+            padding-bottom: 3px;
+        }
+
+        .meet__socials{
+            gap: 8px;
+        }
+
+        .meet__socials-sub{
+            width: 23px;
+            height: 23px;
+        }
+
+        .social{
+            width: 15px;
+            height: 15px;
+        }
+
+            /* ================ Timmy ================ */
+
+        .timmy__container{
+            height: 10rem; 
+            left: 140px; 
+            top: 400px; 
+        }
+
+        .timmy__sub-container{
+            padding: 20px; 
+        }
+
+        .timmy__content{
+            gap: 11rem;
+            padding-bottom: .5rem;
+        }
+
+        .timmy__mike{
+            font-size: 18px;
+            width: 13rem;
+        }
+
+        .timmy__epi{
+            font-size: 13px;
+            gap: .3rem;
+        }
+
+        .tim{
+            width: 15px;
+            height: 16px;
+        }
+
+        .timmy__body{
+            gap: 5px;
+            padding-bottom: .5rem;
+        }
+
+        .body-epi1,
+        .body-mic,
+        .time,
+        .secs,
+        .secc{
+            font-size: 13px;
+        }
+
+        .timmy__body3{
+            gap: 5px;
+        }
+
+        .timmy__empty{
+            width: 45px;
+            height: 45px;
+        }
+
+        .timmy__10s{
+            padding-top: 10px;
+        }
+
+        input[type="range"]{
+            width: 19rem;
+            height: 2px;
+        }
+        
+        input[type="range"]::-webkit-slider-thumb {
+           width: 3px;
+           height: 3px;
+        }
+
+        .speak{
+            width: 17px;
+            height: 17px;
+        }
+
+            /* ================ Footer ================ */
+
+    .footer__top-container{
+        height: 10rem;
+        padding-left: 12rem; 
+    }
+    
+    .footer__sub{
+        top: 15px; 
+        gap: 8rem;
+    }
+    
+    .footer__text{
+        width: 20rem; 
+        font-size: 15px; 
+        line-height: 20px; 
+    }
+
+    .footer__img{
+        padding-top: 0px; 
+    }
+    
+    .foot-img{
+        width: 105px; 
+        height: 20px;
+    }
+
+    .footer__great{
+        font-size: 13px; 
+    }
+
+    .footer__bottom-container{
+        height: 15rem;
+        padding-right: 2rem;
+    }
+    
+    .footer__bot{
+        display: inline-flex;
+        gap: 3rem;
+    }
+    
+    .footer__bott{
+        width: 120px; 
+        gap: 10px;
+    }
+    
+    .footer__bo{
+        gap: 5px;
+    }
+        
+    .footer__start{
+        padding-bottom: 10px;
+        font-size: 11px;  
+    }
+    
+    .footer__contact{
+        font-size: 10px;
+    }
+    
+    
+    .footer__terms{
+        font-size: 10px; 
+    }
+    
+    
+    .footer__9{
+        gap: 10px;     
+    }
+    
+    .footer__11{
+        padding-top: 30;
+        padding-right: 0;
+    }
+    
+    .footer__12{
+        width: 185px; 
+        height: 15px;
+    }
+    
+    .footer__13,
+    .footer__14,
+    .footer__15{
+        font-size: 9px;
+    }
+}
+
+/* Media query for screens with a minimum width of 1100px */
+@media screen and (min-width: 1100px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+  
+    header {
+      background-size: cover;
+    }
+  
+    .nav{
+        padding: 3rem;
+    }
+    .nav__menu {
+      padding-bottom: 0;
+    }
+  
+    .nav__logo {
+      width: 8rem;
+    }
+  
+    .nav__list {
+      column-gap: 3rem;
+    }
+  
+    .nav__link {
+      font-size: 15px;
+    }
+  
+    .nav__buttons {
+      gap: 2rem;
+    }
+  
+    .search__nav{
+        font-size: 11px;
+    }
+
+    #search-nav {
+        width: 15px;
+        height: 15px;
+    }
+
+    .nav__toggle{
+        width: auto;
+        height: auto;
+    }
+
+    .nav__body {
+      margin: 100px 150px;
+      width: 45rem;
+    }
+  
+    .nav__h1 {
+      font-size: 50px;
+    }
+  
+    .nav__body p {
+      font-size: 15px;
+      padding-bottom: 50px;
+    }
+  
+    .nav-im{
+        gap: 2rem;
+        width: 150px;
+        height: 50px;
+    }
+
+       /* ============= Home =============== */
+
+    .home__container {
+      padding: 200px;
+      gap: 150px;
+    }
+  
+    .home__head {
+      width: 30rem;
+    }
+  
+    .home__h1 {
+      font-size: 45px;
+      line-height: 50px;
+        padding-bottom: 30px;
+    }
+  
+    .home__episode-circle {
+      width: 55px; 
+      height: 55px;
+    }
+  
+    .home__episode{
+        gap: 21px;
+    }
+    .epi,
+    .cat{
+        font-size: 13px;
+    }
+
+    .tex,
+    .home__epi-page{
+        width: 27rem;
+        font-size: 15px;
+        padding-bottom: 2rem;
+        line-height: 20px;
+    }
+
+    .ico{
+        padding-top: 0px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .home__epi-img {
+      width: 30rem;
+    }
+    .new-epi {
+        font-size: 45px;
+        transform-origin: 50% 390%;
+    }
+
+    .new__epi-img{
+        width: 350px;
+        height: 350px;
+    }
+
+        /* ============= Podcast =============== */
+
+        .podcast__sub-container{
+            padding: 3rem 0;
+        }
+
+        .podcast__h1{
+            font-size: 40px;
+        }
+
+        .podcast__h1-p{
+            font-size: 15px;
+            line-height: 70px;
+        }
+        
+        .podcast__first-content{
+            gap: 50px;
+        }
+
+        .podcast__content{
+            padding-bottom: 1rem;
+        }
+
+        .podcast__child{
+            width: 17rem;
+        }
+
+        .podcast__bag{
+            width: 40px;
+            height: 40px;
+            left: 220px;
+            top: 10px;
+            border-radius: 10px; 
+        }
+
+        .podcast__bag-sub{
+            width: auto;
+            height: auto;
+        }
+
+        .podcast__sub-2{
+            padding: 20px;
+        }
+
+        .epi__7,
+        .epi__7-tec,
+        .epi-page{
+            font-size: 13px;
+            line-height: 27px;
+        }
+
+        .srkp{
+            font-size: 18px;
+            line-height: 34px;
+        }
+
+        .body63{
+            gap: 25px;
+        }
+
+        .body64,
+        .body66,
+        .body67,
+        .body68{
+            width: 6px;
+            height: 6px;
+        }
+            /* ============= Essential =============== */
+
+        .essential__container{
+            gap: 30rem;
+            margin: 45px 175px;
+        }
+
+        .essential__epi-text{
+            font-size: 40px;
+        }
+
+        .essential__view-text{
+            font-size: 13px;
+        }
+
+        .arrow{
+            width: 20px;
+            height: 15px;
+        }
+
+        .essential__first,
+        .essential__first1{
+            width: 17rem;
+            height: 29rem;
+            margin: 30px;
+            border-radius: 10px;
+        }
+
+        .essential__first-sub{
+            width: 17rem;
+            height: 17rem;
+        }
+
+        .body-img6{
+            border-top-left-radius: 10px; 
+            border-top-right-radius: 10px; 
+        }        
+
+        .essential__sub-container{
+            margin: 0 150px;
+            height: 65rem;
+        }
+
+        .essential__epi,
+        .essential__tec-text{
+            font-size: 12px;
+            line-height: 27px;
+        }
+
+        .essential__main-text{
+            padding: 30px;
+        }
+
+        .srkpp{
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        .essential__shar{
+            margin-top: 20px;
+        }
+
+        .share{
+            font-size: 13px;
+            gap: 1rem;
+        }
+
+        .sha{
+            width: auto;
+            height: auto;
+        }
+
+        .body91{
+            width: 40px;
+            height: 40px;
+            left: 220px;
+            top: 10px;
+        }
+
+        .body93{
+            width: 20px;
+            height: 23px;
+        }
+
+            /* ============= Video =============== */
+
+        .video__container{
+            background-size: cover;
+            height: 30rem;
+        }
+
+        .video{
+            width: 70px;
+            height: 70px;
+        }
+
+        .videos{
+            width: 25px;
+            height: 25px;
+        }
+
+            /* ================ Meet ================ */
+
+        .meet__container{
+            margin: 50px 0;
+            gap: 35rem;
+        }
+
+        .meet__h1{
+            font-size: 40px;
+        }
+
+        .meet__h1-p{
+            font-size: 15px;
+        }
+
+        .meet__main-content{
+            margin: 20px 200px;
+            gap: 70px;
+        }
+
+        .meet__first{
+            width: 25rem;
+            height: 32rem;
+        }
+
+        .meet__sub{
+            padding: 30px;
+        }
+
+        .meet__name{
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+
+        .meet__title{
+            font-size: 12px;
+            padding-bottom: 25px;
+        }
+
+        .meet__socials{
+            gap: 15px;
+        }
+
+        .meet__socials-sub{
+            width: 18px;
+            height: 18px;
+        }
+
+        .social{
+            width: 10px;
+            height: 10px;
+        }
+
+            /* ================ Timmy ================ */
+
+        .timmy__container{
+            height: 14rem; 
+            left: 210px; 
+            top: 520px; 
+        }
+
+        .timmy__sub-container{
+            padding: 30px; 
+        }
+
+        .timmy__content{
+            gap: 13rem;
+            padding-bottom: .5rem;
+        }
+
+        .timmy__mike{
+            font-size: 25px;
+            width: 20rem;
+        }
+
+        .timmy__epi{
+            font-size: 12px;
+            gap: .5rem;
+        }
+
+        .tim{
+            width: 15px;
+            height: 10px;
+        }
+
+        .timmy__body{
+            gap: 5px;
+            padding-bottom: .5rem;
+        }
+
+        .body-epi1,
+        .body-mic,
+        .time,
+        .secs,
+        .secc{
+            font-size: 15px;
+        }
+
+        .timmy__body3{
+            gap: 10px;
+        }
+
+        .timmy__empty{
+            width: 50px;
+            height: 50px;
+        }
+
+        .timmy__10s{
+            padding-top: 25px;
+        }
+
+        input[type="range"]{
+            width: 23rem;
+            height: 2px;
+        }
+        
+        .speak{
+            width: 18px;
+            height: 18px;
+        }
+
+            /* ================ Footer ================ */
+
+    .footer__top-container{
+        height: 15rem;
+        padding-left: 15rem; 
+    }
+    
+    .footer__sub{
+        top: 25px; 
+        gap: 12rem;
+    }
+    
+    .footer__text{
+        width: 30rem; 
+        font-size: 20px; 
+        line-height: 30px; 
+    }
+
+    .footer__img{
+        padding-top: 15px; 
+    }
+    
+    .foot-img{
+        width: 110px; 
+        height: 18px;
+    }
+
+    .footer__great{
+        font-size: 13px; 
+    }
+
+    .footer__bottom-container{
+        height: 20rem;
+        padding-right: 3rem;
+    }
+    
+    .footer__bot{
+        display: inline-flex;
+        gap: 5rem;
+    }
+    
+    .footer__bott{
+        width: 130px; 
+        gap: 30px;
+    }
+    
+    .footer__bo{
+        gap: 30px;
+    }
+        
+    .footer__start{
+        padding-bottom: 20px;
+        font-size: 13px;  
+    }
+    
+    .footer__contact{
+        font-size: 13px;
+    }
+    
+    .footer__terms{
+        font-size: 13px; 
+    }
+    
+    .footer__9{
+        gap: 20px;     
+    }
+    
+    .footer__11{
+        padding-top: 70px;
+        padding-right: 33px;
+    }
+    
+    .footer__12{
+        width: 250px; 
+        height: 18px;
+    }
+    
+    .footer__13,
+    .footer__14,
+    .footer__15{
+        font-size: 11px;
+    }
+  }
+
